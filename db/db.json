@@ -1,6 +1,11 @@
 [
     {
-        "title":"Test Title",
-        "text":"Test text"
+        "title": "Test Title",
+        "text": "Test text"
+    },
+    {
+        "title": "groceries",
+        "text": "milk",
+        "note_id": "dbd9bc99-af95-4291-9cc2-6a95fd277717"
     }
 ]

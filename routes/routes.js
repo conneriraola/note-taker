@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { v4: uuidv4 } = require('uuid');
 
 module.exports = app => {
 
@@ -35,7 +36,7 @@ module.exports = app => {
                 const newNote = {
                     title,
                     text,
-                    note_id: uuid(),
+                    note_id: uuidv4(),
                 };
   
                 // Obtain existing reviews
@@ -67,6 +68,9 @@ module.exports = app => {
                 res.json(response)
             }
         })
+
+
+
 
         app.get('/api/notes/:id', function(req,res) {
             res.json(notes[req.params.id]);
